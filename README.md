@@ -16,6 +16,7 @@ Map<dynamic, dynamic> androidInfo;
 // Platform messages may fail, so we use a try/catch PlatformException.
 try {
   androidInfo = await AndroidInfo.version;
+  //expected map {'name': 'P', 'code': 28, 'release': 9}
 } on PlatformException {
   androidInfo = 'Failed to get platform version.';
 }
