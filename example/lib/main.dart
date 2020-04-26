@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:androidversion/version.dart';
+import 'package:androidversion/androidversion.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +26,6 @@ class _MyAppState extends State<MyApp> {
     Map<dynamic, dynamic> info;
     try {
       info = await AndroidInfo.version;
-      print(info);
     } on PlatformException {
       info = {'error': 'Failed to get platform version.'};
     }
