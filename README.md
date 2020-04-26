@@ -12,7 +12,7 @@ Get the Android device Version Name, Release Code and Version Code.
 Get Android Information:
 
 ```dart
-String androidInfo;
+Map<dynamic, dynamic> androidInfo;
 // Platform messages may fail, so we use a try/catch PlatformException.
 try {
   androidInfo = await AndroidInfo.version;
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('My App'),
         ),
         body: Center(
           child: Text('Running on: $_info\n'),

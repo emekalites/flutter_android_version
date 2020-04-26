@@ -1,6 +1,6 @@
 name: androidversion
 description: Get android version code and name.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/emekalites/flutter_android_version
 
 environment:
